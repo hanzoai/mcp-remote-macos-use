@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  mcp-remote-macos:
+    image: hanzoai/mcp-remote-macos:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - MACOS_HOST=${MACOS_HOST}
+      - MACOS_PORT=${MACOS_PORT:-5900}
+      - MACOS_USERNAME=${MACOS_USERNAME}
+      - MACOS_PASSWORD=${MACOS_PASSWORD}
+      - VNC_ENCRYPTION=${VNC_ENCRYPTION:-prefer_on}
+      - LIVEKIT_URL=${LIVEKIT_URL:-}
+      - LIVEKIT_API_KEY=${LIVEKIT_API_KEY:-}
+      - LIVEKIT_API_SECRET=${LIVEKIT_API_SECRET:-}
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
