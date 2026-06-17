@@ -1,4 +1,4 @@
-# LLM.md - Hanzo Mcp Remote Macos Use
+# Hanzo Mcp Remote Macos Use
 
 ## Overview
 MCP server that enables AI to fully control remote macOS systems
