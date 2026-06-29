@@ -1,3 +1,5 @@
+<p align="center"><img src=".github/hero.svg" alt="mcp-remote-macos-use" width="880"></p>
+
 # MCP Server - Remote MacOs Use
 **The first open-source MCP server that enables AI to fully control remote macOS systems.**
 
