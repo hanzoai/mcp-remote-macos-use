@@ -1,0 +1,9 @@
+# Hanzo CI/CD for hanzoai/mcp-remote-macos-use: .github/workflows/cicd.yml imports hanzoai/ci,
+# which reads this file. The build door builds each image, one BuildKit Job
+# per platform.
+images:
+  - name: mcp-remote-macos
+    context: .
+    dockerfile: Dockerfile
+    repo: ghcr.io/hanzoai/mcp-remote-macos
+    platforms: [linux/amd64]
